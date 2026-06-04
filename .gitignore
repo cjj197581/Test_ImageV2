@@ -6,14 +6,11 @@ __pycache__/
 *.py[cod]
 *.egg-info/
 
-# 生成的图片和视频 (二进制大文件，不提交)
-output/
-output_book6/
-
 # 各 prompt 文件夹中生成的 PNG (只提交 .txt 源文件)
-需要生成的图片的提示词/*.png
-prompts_ppt_v50/*.png
-prompts_book6/*.png
+# 如需展示生成效果，取消下面注释
+# 需要生成的图片的提示词/*.png
+# prompts_ppt_v50/*.png
+# prompts_book6/*.png
 
 # API易 后台截图 (含账户信息)
 *API易*/*
