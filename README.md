@@ -50,15 +50,33 @@ Test_ImageV2/
 │
 ├── gen.py                        # ★ 通用批量文生图 CLI
 ├── run_gen2.bat                  # 一键启动脚本
+│
+├── output/                       # 生成的图片和视频 (22 张图 + 7 个视频)
+│   ├── *.png                     # 学习示例生成的 13 张图片
+│   └── *.mp4                     # Veo 3.1 生成的 7 个视频
+│
+├── 需要生成的图片的提示词/        # 相控阵雷达 PPT 课件 (5 组)
+│   ├── slide_01~05.txt           # prompt 源文件
+│   └── slide_01~05.png           # 生成的 PPT 页面
+│
+├── prompts_ppt_v50/              # AI 技术 PPT 课件 (15 组)
+│   ├── *.txt                     # prompt 源文件
+│   └── *.png                     # 生成的 PPT 页面
+│
+├── prompts_book6/                # 图书封面 prompt (1 组)
+├── output_book6/                 # 生成的封面图片
+│
 ├── memory/                       # 18 个经验记忆文件
-├── prompts_ppt_v50/              # 课件 prompt 示例 (15个)
-│   需要生成的图片的提示词/        # 相控阵雷达课件 (5个)
 │
 ├── APIYI_完整使用指南.md          # API易 完整 API 文档
 ├── FINAL_REPORT.md               # 最终总结报告
 ├── PROJECT_SUMMARY.md            # 图片阶段总结
 ├── VIDEO_SUMMARY.md              # 视频阶段总结
-└── GEN_使用说明.md               # gen.py 使用说明
+├── GEN_使用说明.md               # gen.py 使用说明
+│
+├── .env.example                  # 配置模板
+├── .gitignore
+└── requirements.txt
 ```
 
 ## gen.py — 批量生成工具
