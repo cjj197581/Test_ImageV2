@@ -1,0 +1,16 @@
+- [User Role & Context](user_role.md) — 中国开发者学习 gpt-image-2 通过 API易 中转服务，Python 项目实战
+- [extra_body Parameter Pattern](feedback_extra_body.md) — seed/quality/output_format 等必须通过 extra_body 而非直接传参
+- [Base64 Format Compatibility](feedback_b64_format.md) — 官方模型纯 base64 vs 官逆模型带 data: 前缀，必须兼容两种
+- [Size Parameter Per Model](feedback_size_param.md) — all 模型不支持 size 参数，官方支持任意尺寸，vip 仅支持 30 档预设
+- [Fallback Detection Multilingual](feedback_fallback_detection.md) — 错误检测必须包含中文关键词（不支持/未开放）而非仅英文
+- [URL Construction Gotcha](feedback_url_construction.md) — BASE_URL 已含 /v1 时拼接要防重复前缀
+- [input_fidelity Must Not Be Passed](feedback_input_fidelity.md) — gpt-image-2 编辑自动启用 high-fidelity，手动传入会报错
+- [API易 Model Variants](project_apiyi_models.md) — 官方/all/vip 三模型的能力矩阵、定价、速度对比
+- [Sora 2 Discontinued](project_sora2_discontinued.md) — OpenAI 2026年3月关停 Sora 2，现在推荐 Veo 3.1 (Google) 作为文本转视频方案
+- [Veo 3.1 Model Name & Pricing](project_veo31_model.md) — 正确模型名 veo-3.1-generate-preview，其他变体不可用；~$1.20/视频
+- [Video Content Endpoint Binary](feedback_video_content_endpoint.md) — content 端点返回 binary MP4 非 JSON；status=completed 后需 3s 延迟；5x 重试机制
+- [Video Content Safety Filters](feedback_video_content_safety.md) — 中文 prompt 可能触发审核失败(卡50%)，建议英文或简化描述
+- [Video Sync Endpoint Broken](feedback_video_sync_endpoint.md) — Chat Completions SSE 流式不可用，仅异步 POST /v1/videos 工作
+- [Windows BAT Encoding](feedback_windows_bat_encoding.md) — .bat 文件必须用 GBK/ANSI 编码保存，UTF-8 会导致中文乱码
+- [Windows Unicode Print Crash](feedback_windows_unicode_print.md) — print() 中 ✓✗→ 等 Unicode 字符在 GBK 终端崩溃，用 ASCII 替代
+- [Batch CLI Design Pattern](pattern_gen_batch_cli.md) — gen.py 批量文生图 CLI 工具的设计模式：同名输出、跳过已存在、非致命错误
