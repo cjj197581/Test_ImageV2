@@ -14,3 +14,5 @@
 - [Windows BAT Encoding](feedback_windows_bat_encoding.md) — .bat 文件必须用 GBK/ANSI 编码保存，UTF-8 会导致中文乱码
 - [Windows Unicode Print Crash](feedback_windows_unicode_print.md) — print() 中 ✓✗→ 等 Unicode 字符在 GBK 终端崩溃，用 ASCII 替代
 - [Batch CLI Design Pattern](pattern_gen_batch_cli.md) — gen.py 批量文生图 CLI 工具的设计模式：同名输出、跳过已存在、非致命错误
+- [Image Editing Workaround](feedback_image_editing_workaround.md) — /v1/images/edits 返回 400；用 /v1/chat/completions + base64 image_url 做风格迁移；CDN 下载用 requests 而非 urllib
+- [GitHub Project Archival](pattern_github_archival.md) — Git 初始化→.gitignore 安全审计→README→分阶段提交→分支改名→推送 的完整封存流程
